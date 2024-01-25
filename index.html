@@ -17,7 +17,7 @@
   <body class="page">
     <header class="header">
       <div class="title_block">
-        <h1 class="title">&lt;/HTML&gt;</h1>
+        <p class="title">&lt;/HTML&gt;</p>
         <p class="title_text">закрывающий тег</p>
       </div>
       <nav class="theme-menu header__theme-menu">
@@ -47,7 +47,7 @@
       </nav>
     </header>
     <main class="main">
-      <section class="post">
+      <article class="post">
         <h2 class="post_title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
@@ -78,8 +78,8 @@
             <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
           </div>
         </div>
-      </section>
-      <section class="post">
+      </article>
+      <article class="post">
         <h2 class="post_title">
           1 спринт: Я — чистый лист
         </h2>
@@ -108,8 +108,8 @@
             <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
           </div>
         </div>
-      </section>
-      <section class="post">
+      </article>
+      <article class="post">
         <h2 class="post_title">
           1 спринт: А если не получится?
         </h2>
@@ -138,8 +138,8 @@
             <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
           </div>
         </div>
-      </section>
-      <section class="post">
+      </article>
+      <article class="post">
         <h2 class="post_title">
           2 спринт: Погоня за идеалом
         </h2>
@@ -168,8 +168,8 @@
             <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
           </div>
         </div>
-      </section>
-      <section class="post">
+      </article>
+      <article class="post">
         <h2 class="post_title">
           2 спринт: О тех, кто рядом
         </h2>
@@ -198,8 +198,8 @@
             <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
           </div>
         </div>
-      </section>
-      <section class="post">
+      </article>
+      <article class="post">
         <h2 class="post_title">
           3 спринт: Обходные стратегии
         </h2>
@@ -228,8 +228,8 @@
             <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
           </div>
         </div>
-      </section>
-      <section class="post">
+      </article>
+      <article class="post">
         <h2 class="post_title">
           3 спринт: Когда опускаются руки
         </h2>
@@ -258,8 +258,8 @@
             <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
           </div>
         </div>
-      </section>
-      <section class="post">
+      </article>
+      <article class="post">
         <h2 class="post_title">
           «Сейчас я здесь»
         </h2>
@@ -288,7 +288,7 @@
             <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
           </div>
         </div>
-      </section>
+      </article>
     </main>
     <footer class="footer">
       <button
@@ -302,22 +302,22 @@
         </svg>
         <span class="save_button_text">Сохранить на память</span>
       </button>
-      <dialog id="save_dialog">
-        <div class="save_dialog_block">
-          <svg viewBox="0 0 39 39" class="save_dialog_floppy">
-            <use href="./svg/floppy.svg#floppy" class="floppy"></use>
-          </svg>
-          <span class="save_dialog_text">Вставьте дискету, чтобы продолжить</span>
-        </div>
-        <button
-          class="button close_button"
-          type="button"
-          onclick="window['save_dialog'].close();"
-        >
-          ок
-        </button>
-      </dialog>
     </footer>
+    <dialog id="save_dialog">
+      <div class="save_dialog_block">
+        <svg viewBox="0 0 39 39" class="save_dialog_floppy">
+          <use href="./svg/floppy.svg#floppy" class="floppy"></use>
+        </svg>
+        <span class="save_dialog_text">Вставьте дискету, чтобы продолжить</span>
+      </div>
+      <button
+        class="button close_button"
+        type="button"
+        onclick="window['save_dialog'].close();"
+      >
+        ок
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
