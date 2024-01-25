@@ -164,25 +164,25 @@
     -webkit-text-stroke: 1px var(--stroke_color);
   }
 }
-.filter1 {
+.filter_grayscale {
   filter: grayscale(1);
 }
-.filter2 {
+.filter_hue {
   filter: hue-rotate(180deg);
 }
-.filter3 {
+.filter_invert {
   filter: invert(0.7);
 }
-.filter4 {
+.filter_contrast {
   filter: contrast(7);
 }
-.filter5 {
+.filter_multiple {
   filter: hue-rotate(60deg) contrast(200%) blur(2px);
 }
-.filter6 {
+.filter_brightness {
   filter: brightness(12);
 }
-.filter7 {
+.filter_sepia {
   filter: sepia(10);
 }
 .content {
