@@ -78,6 +78,7 @@
   border: none;
   padding-left: 24px;
   text-decoration: none;
+  cursor: pointer;
 }
 .theme-menu__button[disabled] {
   opacity: 0.6;
@@ -211,11 +212,13 @@
   border: 2px solid var(--accent_color);
   background: var(--bg_color);
   color: var(--accent_color);
+  cursor: pointer;
 }
 .card__icon-button {
   background: none;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 .card__icon-button:focus {
   outline: none;
