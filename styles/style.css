@@ -327,7 +327,8 @@ dialog::backdrop {
   padding: 9px 17px;
   text-transform: uppercase;
   min-height: 38px;
-  line-height: 90%; position: relative;
+  line-height: 90%;
+  position: relative;
   background: transparent;
   display: inline-block;
   background-image: linear-gradient(var(--accent_color), var(--accent_color));
