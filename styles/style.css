@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 54px; 
+  gap: 54px;
   padding: 102px 0;
   font-size: 14px;
   margin: 0 auto;
@@ -139,23 +139,25 @@
   font-variation-settings: "wght" var(--title_wgth);
   padding: 5px 10px;
 }
-.img {
-  width: clamp(371px, 99vw, 692px);
-  height: clamp(371px, 99vw, 696px);
-  background: url(../images/layers1.png);
-  background-size: cover;
-  background-position: right;
+.img_block {
+  position: relative;
   border-top: 2px solid var(--accent_color);
   border-bottom: 2px solid var(--accent_color);
-  display: flex;
-  justify-content: end;
-  padding: 25px;
+}
+.image {
+  width: clamp(371px, 99vw, 692px);
+  height: clamp(371px, 99vw, 696px);
+  object-fit: cover;
+  object-position: right;
 }
 .img_text {
   opacity: 0.5;
   mix-blend-mode: hard-light;
   outline: none;
   text-shadow: 0 0 1px var(--stroke_color);
+  position: absolute;
+  top: 25px;
+  right: 25px;
 }
 @supports (-webkit-text-stroke: 1px var(--stroke_color)) {
   .img_text {
@@ -214,10 +216,10 @@
   border: none;
   padding: 0;
 }
-.card__icon-button:focus{
+.card__icon-button:focus {
   outline: none;
 }
-.card__icon-button:focus-visible{
+.card__icon-button:focus-visible {
   border: 2px solid var(--accent_color);
 }
 .sparks {
